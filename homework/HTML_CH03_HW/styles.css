@@ -1,0 +1,9 @@
+body {
+  background-color: #f0f0f0; /* Change to your preferred background color */
+  color: #333; /* Change to your preferred text color */
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
