@@ -44,18 +44,25 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-7 col-md-12 col-12">
-              <div class="card">
-                <img src="ctc_blessing_bags.jpg" class="card-img-top" alt="Employee 1">
-                  <div class="card-body">
-                      <p class="card-text">Here's one of are many donations</p>
-                  </div>
-              </div>
-          </div>
+    <form action="submit_donation.php" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
       </div>
-    </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="mb-3">
+        <label for="amount" class="form-label">Donation Amount</label>
+        <input type="number" class="form-control" id="amount" name="amount" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Donate</button>
+    </form>
   </main>
 
   <footer class="bg-primary text-white text-center py-3">

@@ -43,6 +43,24 @@
     </div>
   </header>
 
+  <main>
+    <form action="submit_form.php" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </main>
+
   <footer class="bg-primary text-white text-center py-3">
     <a href="https://www.facebook.com/ConnectingThroughCharity/" target="_blank">
       <img src="android-chrome-192x192.png" alt="Description of Image" style="width:50px;">
