@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Movies</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-4">Favorite Movies</h1>
+    <div class="mb-3">
+      <label for="movieInput" class="form-label">Enter your favorite movie:</label>
+      <input type="text" class="form-control" id="movieInput">
+      <button type="button" class="btn btn-primary mt-2" onclick="addMovie()">Add Movie</button>
+    </div>
+    <h3>My Favorite Movies:</h3>
+    <ul id="movieList"></ul>
+  </div>
+
+  <script>
+    // Create an array with 3 of your personal favorite movies
+    let favoriteMovies = ["Transformers 2: Revenge of the Fallen", "Rush Hour 2", "Friday"];
+
+    // Function to add a movie to the array and display the updated list
+    function addMovie() {
+      // Get the movie entered by the user
+      const movieInput = document.getElementById('movieInput').value;
+
+      // Add the new movie to the array
+      favoriteMovies.push(movieInput);
+
+      // Clear the input field
+      document.getElementById('movieInput').value = '';
+
+      // Display the updated list of movies
+      displayMovies();
+    }
+
+    // Function to display the list of movies
+    function displayMovies() {
+      const movieList = document.getElementById('movieList');
+      movieList.innerHTML = '';
+
+      // Use a for loop to print the movies stored in the array
+      for (let i = 0; i < favoriteMovies.length; i++) {
+        const li = document.createElement('li');
+        li.textContent = favoriteMovies[i];
+        movieList.appendChild(li);
+      }
+    }
+
+    // Initial display of favorite movies
+    displayMovies();
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

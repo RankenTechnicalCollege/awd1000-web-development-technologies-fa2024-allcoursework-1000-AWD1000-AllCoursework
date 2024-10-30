@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Verification</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-4">Age Verification</h1>
+    <div class="mb-3">
+      <label for="ageInput" class="form-label">Enter your age:</label>
+      <input type="text" class="form-control" id="ageInput">
+      <button type="submit" class="btn btn-primary mt-2" onclick="verifyAge()">Verify Age</button>
+    </div>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function verifyAge() {
+      // Get the age entered by the user
+      const ageInput = document.getElementById('ageInput').value;
+      const message = document.getElementById('message');
+      message.style.color = "red"; // Optional: Set message color to red for visibility
+
+      // Check if the input is an integer
+      const age = parseInt(ageInput);
+
+      if (isNaN(age)) {
+        message.textContent = "Please enter your age!";
+      } else if (age < 1 || age > 200) {
+        message.textContent = "Age out of range!";
+      } else if (age >= 21) {
+        message.textContent = "Welcome to the venue!";
+        message.style.color = "green"; // Optional: Change message color to green if welcome
+      } else if (age < 21) {
+        message.textContent = "You're not old enough!";
+      }
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
