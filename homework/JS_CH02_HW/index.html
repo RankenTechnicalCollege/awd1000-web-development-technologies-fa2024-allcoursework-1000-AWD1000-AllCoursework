@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Food Chain</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Fast Food Drive-Through</h2>
+    <form>
+      <div class="form-group">
+        <label for="burgers">Number of Burgers ($1 each):</label>
+        <input type="number" class="form-control" id="burgers" min="0">
+      </div>
+      <div class="form-group">
+        <label for="fries">Number of Fries ($2 each):</label>
+        <input type="number" class="form-control" id="fries" min="0">
+      </div>
+      <div class="form-group">
+        <label for="sodas">Number of Sodas ($2.50 each):</label>
+        <input type="number" class="form-control" id="sodas" min="0">
+      </div>
+      <button type="submit" class="btn btn-primary" id="btnClick">Calculate Total</button>
+    </form>
+    <h4 class="mt-3" id="totalCost">Total Cost: $0.00</h4>
+  </div>
+  <script src="script.js">
+document.getElementById('btnClick').onclick = () => {
+  const burgers = parseInt(document.getElementById('burgers').value) || 0;
+  const fries = parseInt(document.getElementById('fries').value) || 0;
+  const sodas = parseFloat(document.getElementById('sodas').value) || 0;
+
+  const totalCost = (burgers * 1) + (fries * 2) + (sodas * 2.5);
+  
+  document.getElementById('totalCost').innerHTML = `Total Cost: $${totalCost.toFixed(2)}`;
+};
+</script>
+</body>
+</html>
