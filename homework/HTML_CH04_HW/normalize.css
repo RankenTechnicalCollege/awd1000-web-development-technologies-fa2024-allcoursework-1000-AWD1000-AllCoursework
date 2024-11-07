@@ -1,0 +1,53 @@
+body {
+  font-size: 100%;
+}
+
+
+header {
+  height: 60px;
+}
+
+
+header {
+  background-color: #4CAF50;
+}
+
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+
+p {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+section.introduction p {
+  font-style: italic;
+}
+
+
+h2, ul {
+  margin: 20px 0;
+}
+
+
+ul > li {
+  list-style-type: square;
+}
+
+
+a:hover, a:focus {
+  color: red;
+}
+
+
+body {
+  font: italic small-caps bold 16px/1.5 Arial, sans-serif;
+}
+
+
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+}

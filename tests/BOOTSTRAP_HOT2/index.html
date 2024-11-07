@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Slice of Heaven</title>
+  <style>
+    .card-bg {
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-2 col-12 mb-3">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Best style pizza
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Margherita Supreme: Our best-selling pizza, the Margherita Supreme, is a symphony of flavors. Crafted with a crisp, stone-baked crust, this pizza is generously topped with fresh, vine-ripened tomatoes, creamy mozzarella, fragrant basil, and a drizzle of extra virgin olive oil. Every bite bursts with the essence of traditional Italian pizza-making, delivering pure, unadulterated bliss
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               Top wing flavor
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Fiery Buffalo Wings: Our Fiery Buffalo Wings are the ultimate crowd-pleaser. These succulent, golden-brown wings are marinated in a spicy buffalo sauce that’s equal parts tangy and fiery. Perfectly balanced with a hint of garlic and a touch of butter, they’re served with a side of cool, creamy ranch or blue cheese dressing. These wings are the ideal companion to our Margherita Supreme, making for a meal that’s simply unforgettable.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Best selling drink
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Blissful Berry Lemonade: is a refreshing blend of sweet and tart flavors. This invigorating beverage combines freshly squeezed lemons with a medley of mixed berries, creating a vibrant, thirst-quenching drink. Perfectly balanced with just the right amount of sweetness, it’s served chilled and garnished with a slice of lemon and a sprig of mint. Ideal for pairing with any of our pizzas or wings, this lemonade is the ultimate refresher to complement your meal.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-md-2 col-12 mb-3">
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Pizza
+                <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Wings
+                <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Drinks
+                <span class="badge badge-primary badge-pill"></span>
+            </li>
+        </ul>
+       </div>
+        <div class="col-md-2 col-12 mb-3">
+          <img src="slice-of-heaven-pizza-thomas-larch.jpg" class="img-fluid" alt="Responsive Image">
+        </div>
+        <div class="col-md-2 col-12 mb-3">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch Modal
+          </button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          Modal body content.
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-12 mb-3">
+        <span class="h1">About Us</span> <p>At Slice of Heaven, we believe that every slice should bring joy. Founded with a passion for quality and community, our mission is to create unforgettable dining experiences by combining the freshest ingredients with innovative recipes. We take pride in our handcrafted pizzas, made with love and care, ensuring each bite delivers pure happiness. Committed to sustainability and local partnerships, Slice of Heaven isn’t just about great food; it’s about making a positive impact, one pizza at a time. Join us and taste the difference!</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="imageCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="mini-pak-350.jpg" class="d-block w-100" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img src="R.jpg" class="d-block w-100" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img src="Pizza.webp" class="d-block w-100" alt="Third slide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card card-bg" style="background-image: url('8dc95cb81467b142de61bf8d48a874fa.jpg');">
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-bg" style="background-image: url('5b4b98f311917fc79b98dc67728102f8.jpg');">
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-bg" style="background-image: url('pizza-wings.jpg');">
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+
+<div class="container my-5">
+  <h2 class="text-center">Sign In</h2>
+  <form>
+      <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+  </div>
+
+<footer class="container mt-5">
+  <div class="row">
+      <div class="col-md-4 text-left">
+          &copy; 2024 Slice of Heaven
+      </div>
+      <div class="col-md-4 text-center">
+          <i class="bi bi-bootstrap"></i>
+      </div>
+      <div class="col-md-4 text-right">
+          <nav>
+              <a href="#">Home</a> |
+              <a href="#">About</a> |
+              <a href="#">Contact</a>
+          </nav>
+      </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
