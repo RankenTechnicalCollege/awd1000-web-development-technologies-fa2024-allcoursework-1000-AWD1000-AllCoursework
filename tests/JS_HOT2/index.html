@@ -10,7 +10,7 @@
       Filename: index.html
    -->
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
    <title>Hands-on Project 7-3</title>
    <link rel="stylesheet" href="styles.css">
    <script src="modernizr.custom.05819.js"></script>
@@ -23,20 +23,20 @@
       </h1>
    </header>
 
-         <article> <h2>Steam Game Sale</h2>
-            <p id="date"></p> <!-- Display the current date -->
+         <article> <h2 id="date">Tue Jul 24 2018</h2> <!-- Display the current date -->
+               <h2>Steam Game Sale</h2>
             <form>
-               <input type="checkbox" id="item1" value="1999">
+               <input type="checkbox" id="item1" value="19.99">
                <label for="item1">Counter Strike ($19.99)</label>
-               <input type="checkbox" id="item2" value="2999">
+               <input type="checkbox" id="item2" value="29.99">
                <label for="item2">Dark Souls III ($29.99)</label>
-               <input type="checkbox" id="item3" value="1349">
+               <input type="checkbox" id="item3" value="13.49">
                <label for="item3">Enter The Gungeon ($13.49)</label>
-               <input type="checkbox" id="item4" value="499">
+               <input type="checkbox" id="item4" value="4.99">
                <label for="item4">Hover Junkers ($4.99)</label>
-               <input type="checkbox" id="item5" value="899"> <!-- Correct price -->
+               <input type="checkbox" id="item5" value="8.99"> <!-- Correct price -->
                <label for="item5">Good Robot ($8.99)</label>
-               <button type="submit" value="Submit"> </button>
+               <input type="submit" value="Calculate" id="submitButton">
             </form>
                <table>
                   <colgroup>
@@ -59,7 +59,7 @@
                   </tbody>
                </table>
             </article>
-            <script>
+            <script src="modernizr.custom.05819.js">
 "use strict";
 
 // Function to simplify getting element by ID
@@ -91,7 +91,12 @@ function calcTotal() {
 // Add event listener to the Submit button
 var submitButton = document.getElementById("sButton");
 submitButton.addEventListener("click", calcTotal); // Corrected syntax
- 
+
+// Setting today's date
+const today = new Date(); 
+const dateString = today.toDateString(); 
+$("#Tue Jul 24 2018").textContent = dateString;
+
 </script>
 </body>
-</html>
+</html> 
